@@ -16,7 +16,7 @@ node {
          bat(/"${mvnHome}\bin\mvn" -Dmaven.test.failure.ignore clean package/)
       } 
     stage('Deploy') {
-    sh '''
+    sh ''
     ls -l $WORKSPACE/target
    
     sudo  rm -rf /usr/share/tomcat/webapps/*.war
