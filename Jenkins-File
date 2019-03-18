@@ -2,11 +2,11 @@ node {
    def mvnHome
    stage('Preparation') { // for display purposes
       // Get some code from a GitHub repository
-      git 'https://github.com/efsavage/hello-world-war.git'
+      git 'https://github.com/yogialw/lab1.git'
       // Get the Maven tool.
       // ** NOTE: This 'M3' Maven tool must be configured
       // **       in the global configuration.           
-      mvnHome = tool 'M2_HOME'
+      mvnHome = tool 'M2'
    }
    stage('Build') {
       // Run the maven build
